@@ -21,9 +21,9 @@ A minimalist teaser for the about page.
 
 	// Data
 	const teamMember: TeamMember = {
-		name: "Alex Morgan",
-		role: "Founder & CEO",
-		image: "https://www.unc.mn/image-placeholder.svg"
+		name: "Jamie Chen",
+		role: "Co-founder & CEO",
+		image: "/generated/image-a-professional-founder-in-a-modern-luxur.webp"
 	};
 </script>
 
@@ -32,7 +32,7 @@ A minimalist teaser for the about page.
 		<div class="relative mx-auto grid max-w-2xl place-items-center gap-16">
 			<ScrollText
 				class="text-title1 text-center"
-				text={`"We're building the future of digital experiences, crafting innovative solutions that transform how people interact with technology in their everyday lives"`}
+				text={`"After years in finance and AI research, I kept seeing the same pattern: dealerships losing millions because they couldn't answer every call. We built Revion to solve that, but what drives us isn't just the revenue recovery—it's knowing that every missed call is a customer who needed help and didn't get it. That's what keeps our team working nights and weekends."`}
 			/>
 
 			<!-- Team Member & CTA Section -->
