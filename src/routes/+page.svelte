@@ -6,25 +6,57 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="Never miss another service appointment"
+	subtitle="Revion's autonomous AI agents answer every call, text, and message 24/7, converting missed opportunities into booked appointments for luxury dealerships."
+	customers={[
+		{
+			name: "Michael Torres",
+			position: "Service Manager",
+			imageSrc: "/generated/image-medium-format-editorial-documentary-port.webp"
+		},
+		{
+			name: "Rebecca Chen",
+			position: "General Manager",
+			imageSrc: "/generated/image-editorial-documentary-portrait-of-a-conf.webp"
+		},
+		{
+			name: "David Harrison",
+			position: "Service Director",
+			imageSrc: "/generated/image-medium-format-editorial-portrait-of-an-e.webp"
+		},
+		{
+			name: "Jennifer Morrison",
+			position: "Operations Manager",
+			imageSrc: "/generated/image-editorial-environmental-portrait-of-a-pr.webp"
+		},
+		{
+			name: "Robert Williams",
+			position: "Senior Service Advisor",
+			imageSrc: "/generated/image-medium-format-editorial-portrait-of-a-se.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by luxury automotive brands"
+	logoUrls={[
+		'https://cdn.brandfetch.io/jaguar.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/landrover.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/porsche.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/bentleymotors.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
-	generating
 	title="What we do"
 	text="Our technology delivers measurable results through secure, adaptable solutions that directly increase productivity and drive growth."
 />
 
 <Testimonials
-	generating
 	testimonials={[
 		{
 			name: "Jane Smith",
@@ -54,7 +86,6 @@
 />
 
 <Features
-	generating
 	title="Features"
 	subtitle="Some features"
 	features={[
@@ -75,5 +106,5 @@
 		}
 	]}
 />
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction />
